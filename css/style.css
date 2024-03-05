@@ -1,0 +1,172 @@
+/* .attribution {
+     font-size: 11px;
+     text-align: center; 
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    } */
+
+    @font-face {
+        font-family: myfamily;
+        src: url(../assets/fonts/Roboto-Regular.ttf);
+    }
+
+    :root {
+        --color-tomato : hsl(4, 100%, 67%);
+        --color-darkGray: hsl(234, 29%, 20%);
+        --color-charcoalGray: hsl(235, 18%, 26%);
+        --color-Gray: hsl(231, 7%, 60%);
+        --color-white: hsl(0, 0%, 100%);
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media(min-width: 477px) {
+        .card-1 {
+            flex-direction: row-reverse !important;
+            height: 90vh !important;
+            padding: 20px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+        .card-1 .down {
+            justify-content: center;
+        }
+        .card-1 img {
+            content: url(../assets/images/illustration-sign-up-desktop.svg);
+            height: 100%;
+        }
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        font-family: myfamily;
+        font-size: 16px;
+        background-color: var(--color-darkGray);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-1,
+    .card-2 {
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1 img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+    .down {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    li {
+        list-style-image: url(../assets/images/icon-list.svg);
+        margin: 20px;
+    }
+
+    form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        outline: none;
+        border: none;
+        background-color: var(--color-darkGray);
+        color: white;
+        padding: 20px 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        cursor: pointer;
+}
+
+    .input {
+        font-family: myfamily;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        border: 1px solid var(--color-Gray);
+        padding: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        cursor: pointer;
+}
+
+input:focus {
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: var(--color-tomato);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.card-2 {
+    width: min-content;
+}
+
+.copyEmail {
+    font-weight: bolder;
+}
+
+.hide {
+    display: none !important;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.invalid {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 10px;
+    color: var(--color-tomato);
+}
+.invalidInput {
+    background-color: hsla(4, 100%, 67%, 0.505) !important; 
+    color: var(--color-tomato) !important;
+    border: 2px solid var(--color-tomato) !important;
+}
+
+
